@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Explicit</title>
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <br><center><img src="./public/images/Parental_Advisory_label.svg.png" width="187" height="150"></center><br>
+    
+    <span id="sorties"></span>
+    <nav class="navbar navbar-expand-lg sticky-top" style="background-color: lightgray; line-height: 1;">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="./public/images/Parental_Advisory_label.svg.png" alt="Parental Advisory" width="30" height="25">
+          </a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html"><strong>ACCUEIL</strong></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./public/top.html"><strong>TOP</strong></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./public/bibli.html"><strong>BIBLIOTHÈQUE</strong></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./public/about.html"><strong>CONTACT</strong></a>
+                </li>
+              </ul>
+            </div>
+
+            <nav id="navbar-example2" class="navbar px-3 mb-1">
+              
+              <ul class="nav nav-pills">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" style="color: black;"><strong>MENU</strong></a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#sorties"><strong>Sorties de la semaine</strong></a></li>
+                    <li><a class="dropdown-item" href="#concerts"><strong>Prochain concerts</strong></a></li>
+                    <li><a class="dropdown-item" href="#video"><strong>Clip de la semaine</strong></a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+        </div>
+      </nav>
+
+
+    <br><br>
+    <center><h1><strong>SORTIES DE LA SEMAINE</strong></h1><br><br>
+      <div id="carouselExampleAutoplaying" class="carousel carousel-dark slide" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+      
+
+        <div class="carousel-inner" id="1er">
+          <div class="carousel-item active">
+            <img src="./public/images/Meridian.PNG" class="d-block w-25" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <button type="button" class="btn btn-secondary btn-md" disabled><h5 class="infoslide"><strong>Dave x Tiakola</strong></h5>
+              <span class="infoslide"><strong>Meridian | Special</strong></span></button>
+            </div>      
+          </div>
+          <div class="carousel-item" id="2e">
+            <img src="./public/images/Utopia.png" class="d-block w-25" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <button type="button" class="btn btn-secondary btn-md" disabled><h5 class="infoslide"><strong>Travis Scott</strong></h5>
+              <span class="infoslide"><strong>Utopia</span></button>
+            </div>      
+          </div>
+          <div class="carousel-item" id="3e">
+            <img src="./public/images/404.jpg" class="d-block w-25" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <button type="button" class="btn btn-secondary btn-md" disabled><h5 class="infoslide"><strong>404 Billy</strong></h5>
+              <span class="infoslide"><strong>Mr. AAA</span></button>
+            </div>      
+          </div>
+          <div class="carousel-item" id="4e">
+            <img src="./public/images/sprinter.jpg" class="d-block w-25" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <button type="button" class="btn btn-secondary btn-md" disabled><h5 class="infoslide"><strong>Central Cee x Dave</strong></h5>
+              <span class="infoslide"><strong>Split Decision</span></button>
+            </div>      
+          </div>
+          <div class="carousel-item" id="5e">
+            <img src="./public/images/jey.jpg" class="d-block w-25" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <button type="button" class="btn btn-secondary btn-md" disabled><h5 class="infoslide"><strong>Jey Brownie</strong></h5>
+              <span class="infoslide"><strong>Faits divers</strong></span></button>
+            </div>      
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </center>
+<br><br><br><br id="concerts"><br><br>
+
+  <div class="ventes">
+    <div class="entete"><h1><strong>PROCHAINS CONCERTS</strong></h1></div>
+      <table class="table table-bordered table-dark" id="custom">
+        <tbody>
+          <tr>
+            <th scope="row">Hamza</th>
+            <td>19 septembre 2023</td>
+            <td>
+              <a href="https://www.youtube.com/watch?v=F2FSrcRjHQ0&list=OLAK5uy_lVsup07HPPs_nquFK0fir5xEoxA5C24Pg&ab_channel=Hamza-Topic" target="_blank">
+              <button type="button" class="btn btn-secondary btn-sm position-relative">
+                542
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                  -20%
+                </span>
+              </button>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">SCH</th>
+            <td>13 avril 2024</td>
+            <td>
+              <a href="https://www.youtube.com/watch?v=CXIbfrwMRQI&ab_channel=SCHVEVO" target="_blank">
+              <button type="button" class="btn btn-secondary btn-sm position-relative">19</button>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Damso</th>
+            <td>30 mai 2025</td>
+            <td>
+              <button type="button" class="btn btn-secondary btn-sm position-relative disabled">SOLD OUT</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Booba</th>
+            <td>20 mars 2024</td>
+            <td>
+              <a href="https://www.youtube.com/watch?v=SDCSl9CFaNM&ab_channel=B20baOfficiel" target="_blank">
+              <button type="button" class="btn btn-secondary btn-sm position-relative">221
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                -5%
+              </span>
+              </button>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">PNL</th>
+            <td>30 février 2024</td>
+            <td>
+              <button type="button" class="btn btn-secondary btn-sm position-relative disabled">🌍</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" colspan="2">Et pour vous régaler encore plus...nos précommandes :</th>
+            
+            <td>
+              <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">PRÉCOMMANDER</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      
+      <div class="textconcert"><br><br><br><br><br><br><br>Retrouve ici les tickets des prochaines dates de concert de tes artistes préférés. Regarde bien, il y en a sous promo !</div>
+
+  
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Précommandes</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Pour accéder à nos précommandes veuillez poursuivre en cliquant sur le bouton s'inscrire
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+        <a href="./public/about.html"><button type="button" class="btn btn-primary">S'inscire</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <img src="./public/images/sch.png" id="sch">
+  </div>
+
+<br id="video"><br><br><br><br>
+
+<div class="card text-center">
+  <div class="card-header">
+    <h1><strong>CLIP DE LA SEMAINE</strong></h1>
+  </div>
+  <div class="card-body">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/g_fCW3g5J4o?si=NmHRxDPlDqvmTcX7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+  <div class="card-footer text-body-secondary">
+    Sortie le 25 août 2023
+  </div>
+</div>
+
+
+<br><br><br><br>
+
+<div class="footer">
+  <br>
+  <a href="https://twitter.com" target="_blank"><img src="public/images/x.jpg" width="33.5px" height="33px"></a><a href="https://facebook.com" target="_blank"><img src="public/images/Fb.png" width="30px" height="30px"></a><a href="https://instagram.com" target="_blank"><img src="public/images/insta.png" width="30px" height="30px"></a><a href="https://spotify.com" target="_blank"><img src="public/images/spoti.png" width="30px" height="30px"></a><a href="https://tiktok.com" target="_blank"><img src="public/images/tiktok.png" width="30px" height="30px"></a><a href="https://youtube.com" target="_blank"><img src="public/images/youtube.png" width="30px" height="30px"></a>
+  <br><strong>© 2023 Copyright. Tous droits réservés</strong>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
